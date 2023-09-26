@@ -1,0 +1,95 @@
+// Cynthia Li
+// EE 371 LAB2 TASK1
+
+// Module task1 is the top module for task1 project
+// it uses a 32x4 single port ram that can takes inputs of a 5-bit address (SW[8:4]),
+// a 4-bit data to write (SW[3:0]), a write control (SW[9]), and a self-operated
+// clock (KEY[0]) and output a 4-bit data stored in the address to read.
+// The read/write address is displayed on HEX5 and HEX4, data to write is 
+// displayed on HEX2, and data to read is displayed on HEX0. 
+module DE1_SoC_task1(CLOCK_50, SW, KEY, HEX5, HEX4, HEX3, HEX2, HEX1, HEX0);
+	input logic CLOCK_50;
+	input logic [9:0] SW;
+	input logic [3:0] KEY;
+	output logic [6:0] HEX5, HEX4, HEX3, HEX2, HEX1, HEX0;
+	
+	// the following turns off the display for HEX3 and HEX1
+	assign HEX3 = 7'b1111111;
+	assign HEX1 = 7'b1111111;
+	
+	logic [3:0] out;
+	logic clk_temp, clk;
+	
+	// the following process the actual key press to prevent metastability
+	userInput human_clk (.clk(CLOCK_50), .press(~KEY[0]), .out(clk_temp));
+	meta clk_metatemp (.clk(CLOCK_50), .in(clk_temp), .out(clk));
+	
+	ram32x4 RAM (.clk, .write(SW[9]), .addr(SW[8:4]), .data_in(SW[3:0]), .data_out(out));
+	
+	// the following turns on the hexadecimal display on HEX5-4 for input address
+	hexadecimal addr1 (.binary({3'b000, SW[8]}), .hex(HEX5));
+	hexadecimal addr2 (.binary(SW[7:4]), .hex(HEX4));
+	
+	// the following turns on the hexadecimal display on HEX2 for input data_to_write
+	hexadecimal in (.binary(SW[3:0]), .hex(HEX2));
+	
+	// the following turns on the hexadecimal display on HEX0 for output data_to_read
+	hexadecimal data_read (.binary(out), .hex(HEX0));
+	
+endmodule
+
+module DE1_SoC_task1_testbench();	
+	logic [9:0] SW;
+	logic [3:0] KEY;
+	logic [6:0] HEX5, HEX4, HEX3, HEX2, HEX1, HEX0;
+	
+	logic CLOCK_50;
+	// Set up a simulated clock.
+	parameter CLOCK_PERIOD=100;
+
+	initial begin
+		CLOCK_50 <= 0;
+		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50; // Forever toggle the clock
+	end
+
+	DE1_SoC_task1 dut (.*);
+	
+	logic clk;
+	assign clk = CLOCK_50;
+	integer i;
+	
+	initial begin
+	KEY[0] <= 1;  					@(posedge clk);
+	KEY[0] <= 0; SW[9] <= 1; 
+	SW[3:0] <= 4'b0000;  		@(posedge clk);			// test only data is given
+	KEY[0] <= 1;  					@(posedge clk);
+	KEY[0] <= 0; SW[8:4] <= 5'b01100; 
+	SW[3:0] <= 4'bX;  			@(posedge clk);			// test only address is given
+	
+	SW[9] <= 1; SW[8:4] <= 5'b01100; 	@(posedge clk);// test if for a ramdom address
+	for (i = 0; i < 16; i++) begin							// if the stored value updates
+		KEY[0] <= 0;				@(posedge clk);
+		SW[3:0] <= i;  			@(posedge clk);
+		KEY[0] <= 1;				@(posedge clk);
+	end
+	KEY[0] <= 0; SW[9] <= 0;  				@(posedge clk);// disenabled write
+	KEY[0] <= 1; SW[3:0] <= 4'b0000;  	@(posedge clk);// test if display stop update
+	KEY[0] <= 0;  								@(posedge clk);
+	KEY[0] <= 1; SW[3:0] <= 4'b0001; 	@(posedge clk);
+	KEY[0] <= 0; 								@(posedge clk);
+	
+	SW[9] <= 1; SW[8:4] <= 5'b10000;	 						// enable write
+	KEY[0] <= 1; 								@(posedge clk);
+	KEY[0] <= 0; 							  	@(posedge clk);// test if display updates
+	KEY[0] <= 1; SW[3:0] <= 4'b0111;		@(posedge clk);
+	KEY[0] <= 0; 							  	@(posedge clk);// test if display updates
+	KEY[0] <= 1; SW[3:0] <= 4'b0011;		@(posedge clk);
+	
+	SW[9] <= 0; SW[8:4] <= 5'b01100;
+	KEY[0] <= 0;  				@(posedge clk);	
+	KEY[0] <= 1;  				@(posedge clk);
+	KEY[0] <= 0;  				@(posedge clk);
+	KEY[0] <= 1; 				@(posedge clk);
+	$stop; 
+	end
+endmodule

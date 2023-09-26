@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'V_GPIO[28]'
+Slack : -4.656
+TNS   : -64.034
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.515
+TNS   : -243.635
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.510
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'V_GPIO[28]'
+Slack : 2.400
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.166
+TNS   : -242.148
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'V_GPIO[28]'
+Slack : -0.724
+TNS   : -16.452
+
+Type  : Slow 1100mV 0C Model Setup 'V_GPIO[28]'
+Slack : -4.870
+TNS   : -66.700
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.674
+TNS   : -250.084
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.503
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'V_GPIO[28]'
+Slack : 2.508
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.166
+TNS   : -243.111
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'V_GPIO[28]'
+Slack : -0.724
+TNS   : -16.426
+
+Type  : Fast 1100mV 85C Model Setup 'V_GPIO[28]'
+Slack : -2.081
+TNS   : -28.230
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -1.902
+TNS   : -72.759
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'V_GPIO[28]'
+Slack : 0.838
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -104.871
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'V_GPIO[28]'
+Slack : -0.418
+TNS   : -7.109
+
+Type  : Fast 1100mV 0C Model Setup 'V_GPIO[28]'
+Slack : -1.816
+TNS   : -24.585
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.652
+TNS   : -62.078
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'V_GPIO[28]'
+Slack : 0.781
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -104.665
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'V_GPIO[28]'
+Slack : -0.395
+TNS   : -6.369
+
+------------------------------------------------------------

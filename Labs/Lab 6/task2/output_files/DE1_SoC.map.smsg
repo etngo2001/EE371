@@ -1,0 +1,11 @@
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(92): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 92
+Warning (10268): Verilog HDL information at dataPathUnit.sv(84): always construct contains both blocking and non-blocking assignments File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 84
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(112): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 112
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(130): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 130
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(148): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 148
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(171): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 171
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(203): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 203
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(254): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 254
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(278): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 278
+Warning (10273): Verilog HDL warning at dataPathUnit.sv(301): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/dataPathUnit.sv Line: 301
+Warning (10273): Verilog HDL warning at controlUnit.sv(93): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/controlUnit.sv Line: 93

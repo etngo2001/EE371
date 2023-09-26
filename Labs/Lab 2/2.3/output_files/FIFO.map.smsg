@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at DE1_SoC_task3.sv(13): object "HEX5" differs only in case from object "hex5" in the same scope File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv Line: 13
+Info (10281): Verilog HDL Declaration information at DE1_SoC_task3.sv(13): object "HEX4" differs only in case from object "hex4" in the same scope File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv Line: 13
+Info (10281): Verilog HDL Declaration information at DE1_SoC_task3.sv(13): object "HEX1" differs only in case from object "hex1" in the same scope File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv Line: 13
+Info (10281): Verilog HDL Declaration information at DE1_SoC_task3.sv(13): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv Line: 13

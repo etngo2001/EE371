@@ -1,0 +1,36 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 6/task2/simulation/modelsim
+vDE1_SoC
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1678760212
+!i10b 1
+!s100 Sgz2edG3=JO^ZK[kVU]J:2
+ILYlMCaDO12:ZoePh1RjTa2
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 DE1_SoC_svo_unit
+S1
+R0
+w1678760204
+8DE1_SoC.svo
+FDE1_SoC.svo
+L0 32
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1678760212.000000
+!s107 DE1_SoC.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|DE1_SoC.svo|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+.
+tCvgOpt 0
+n@d@e1_@so@c

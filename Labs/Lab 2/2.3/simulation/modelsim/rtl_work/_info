@@ -1,0 +1,288 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/simulation/modelsim
+vDE1_SoC_task3
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1674716570
+!i10b 1
+!s100 ZgKVld52bh>ilk^jJFohY1
+IB?VG0hAGWjag0;Qlhl74Q0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 DE1_SoC_task3_sv_unit
+S1
+R0
+Z5 w1674709731
+Z6 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv
+Z7 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv
+L0 12
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1674716570.000000
+Z10 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3}
+Z14 tCvgOpt 0
+n@d@e1_@so@c_task3
+vDE1_SoC_task3_testbench
+R1
+R2
+!i10b 1
+!s100 4MDJz1jMhDojd<0CjMBiX1
+IKCazO>PD3b2enEN0aFKSU0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 51
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_task3_testbench
+vFIFO
+R1
+R2
+!i10b 1
+!s100 1Se>zj^RUW8:k7PSVb`Ql1
+I<HDQE3S9n_nCG6kV60J^90
+R3
+Z15 !s105 FIFO_sv_unit
+S1
+R0
+Z16 w1674709708
+Z17 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO.sv
+Z18 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO.sv
+Z19 L0 11
+R8
+r1
+!s85 0
+31
+R9
+Z20 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO.sv|
+!i113 1
+R12
+R13
+R14
+n@f@i@f@o
+vFIFO_Control
+R1
+R2
+!i10b 1
+!s100 fUMi5?74?E>zCjoV>DhdN0
+IDJjROZ:?zAZQMzh;J=N^_0
+R3
+Z22 !s105 FIFO_Control_sv_unit
+S1
+R0
+Z23 w1674709696
+Z24 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO_Control.sv
+Z25 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO_Control.sv
+R19
+R8
+r1
+!s85 0
+31
+R9
+Z26 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO_Control.sv|
+Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO_Control.sv|
+!i113 1
+R12
+R13
+R14
+n@f@i@f@o_@control
+vFIFO_Control_testbench
+R1
+R2
+!i10b 1
+!s100 NKQlXV=Db_Pb8knggn2`k0
+I6RIPhSI9VO:DJS?]=S2`I3
+R3
+R22
+S1
+R0
+R23
+R24
+R25
+L0 80
+R8
+r1
+!s85 0
+31
+R9
+R26
+R27
+!i113 1
+R12
+R13
+R14
+n@f@i@f@o_@control_testbench
+vFIFO_testbench
+R1
+R2
+!i10b 1
+!s100 Y2AmzBNU;Yb^Nb8;5f__63
+I_Ij:iWiDQh8^CNo[0X`Gi3
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 46
+R8
+r1
+!s85 0
+31
+R9
+R20
+R21
+!i113 1
+R12
+R13
+R14
+n@f@i@f@o_testbench
+vinput_process
+R1
+R2
+!i10b 1
+!s100 JN8586R7`:oLb>P9k`S2C3
+IVmFQ[oH8nFi;`i^E5^4Jo2
+R3
+Z28 !s105 input_process_sv_unit
+S1
+R0
+Z29 w1674709802
+Z30 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/input_process.sv
+Z31 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/input_process.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z32 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/input_process.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/input_process.sv|
+!i113 1
+R12
+R13
+R14
+vinput_process_testbench
+R1
+R2
+!i10b 1
+!s100 hnD@0kH1]]_>oD:`HhQJ<3
+IYF`TRdJ40QSa^N@303aU32
+R3
+R28
+S1
+R0
+R29
+R30
+R31
+L0 49
+R8
+r1
+!s85 0
+31
+R9
+R32
+R33
+!i113 1
+R12
+R13
+R14
+vram16x8
+R2
+!i10b 1
+!s100 2Pf6MeLLHDkVVjQ352GI51
+I17nJ5nXm>a4?iP:4m`dHX1
+R3
+R0
+w1674178472
+8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v
+FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v
+L0 40
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3}
+R14
+vseg7
+R1
+R2
+!i10b 1
+!s100 SX@?>B4`_R^09QW[8<QOB3
+ID>lICaIDUC`c0D5@]PBJ;2
+R3
+Z34 !s105 seg7_sv_unit
+S1
+R0
+Z35 w1674709816
+Z36 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/seg7.sv
+Z37 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/seg7.sv
+L0 9
+R8
+r1
+!s85 0
+31
+R9
+Z38 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/seg7.sv|
+Z39 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/seg7.sv|
+!i113 1
+R12
+R13
+R14
+vseg7_testbench
+R1
+R2
+!i10b 1
+!s100 :]_NAg3Eo@J:KLf0PbN1l3
+IWO73X_dKFQ@h15<EEDn723
+R3
+R34
+S1
+R0
+R35
+R36
+R37
+L0 38
+R8
+r1
+!s85 0
+31
+R9
+R38
+R39
+!i113 1
+R12
+R13
+R14

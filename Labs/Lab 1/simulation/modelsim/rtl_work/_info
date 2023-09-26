@@ -1,0 +1,216 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/simulation/modelsim
+vcarCount
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1673744767
+!i10b 1
+!s100 @ic:VefY:`e`HA=cH>;l[2
+IBa]cS=2?@holKR5on83R<2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 carCount_sv_unit
+S1
+R0
+Z5 w1673662976
+Z6 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carCount.sv
+Z7 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carCount.sv
+L0 9
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1673744767.000000
+Z10 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carCount.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carCount.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1}
+Z14 tCvgOpt 0
+ncar@count
+vcarCount_testbench
+R1
+R2
+!i10b 1
+!s100 NJAKQS4L2ON_j`LkOLh=P2
+I:4DM7366>8Vkz2Io09hA13
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 45
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+ncar@count_testbench
+vcarSensor
+R1
+R2
+!i10b 1
+!s100 2aXN^FUE7g=Hff29OgR5n1
+IH>B<10Gnz_ENLLP0cHHzF0
+R3
+Z15 !s105 carSensor_sv_unit
+S1
+R0
+Z16 w1673662966
+Z17 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carSensor.sv
+Z18 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carSensor.sv
+L0 9
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carSensor.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carSensor.sv|
+!i113 1
+R12
+R13
+R14
+ncar@sensor
+vcarSensor_testbench
+R1
+R2
+!i10b 1
+!s100 img9PgcQX11>hXR`=GK;N1
+InnQnO>1RCLk:@@GfefKXA0
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 71
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+ncar@sensor_testbench
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 JVJX>B7L3N:Ui_:X9E2lJ2
+IL;>Vh>B`oj^PfBfVO_1Xl2
+R3
+Z21 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z22 w1673662999
+Z23 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/DE1_SoC.sv
+Z24 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/DE1_SoC.sv
+L0 11
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/DE1_SoC.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/DE1_SoC.sv|
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 mm_:9G:0EKaA=l0jOGS5P3
+IiFhLOEB_K61;WD]U_4W6M1
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 40
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vseg7
+R1
+R2
+!i10b 1
+!s100 VE1T4Tz?P:=;8<MYRRc4J3
+IOURlm_lJ1W^GOC2ozL;O71
+R3
+Z27 !s105 seg7_sv_unit
+S1
+R0
+Z28 w1673662983
+Z29 8C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/seg7.sv
+Z30 FC:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/seg7.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z31 !s107 C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/seg7.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1|C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/seg7.sv|
+!i113 1
+R12
+R13
+R14
+vseg7_testbench
+R1
+R2
+!i10b 1
+!s100 zES1ZDch2Z;1F56EM6G152
+IQJ0Q31;OJjQZWLTiIDbBR0
+R3
+R27
+S1
+R0
+R28
+R29
+R30
+L0 129
+R8
+r1
+!s85 0
+31
+R9
+R31
+R32
+!i113 1
+R12
+R13
+R14

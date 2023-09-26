@@ -1,0 +1,125 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 1 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carSensor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:07 on Jan 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carSensor.sv 
+# -- Compiling module carSensor
+# -- Compiling module carSensor_testbench
+# 
+# Top level modules:
+# 	carSensor_testbench
+# End time: 17:06:07 on Jan 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 1 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carCount.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:07 on Jan 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carCount.sv 
+# -- Compiling module carCount
+# -- Compiling module carCount_testbench
+# 
+# Top level modules:
+# 	carCount_testbench
+# End time: 17:06:07 on Jan 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 1 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:07 on Jan 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/seg7.sv 
+# -- Compiling module seg7
+# -- Compiling module seg7_testbench
+# 
+# Top level modules:
+# 	seg7_testbench
+# End time: 17:06:07 on Jan 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 1 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:07 on Jan 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 17:06:07 on Jan 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DE1_SoC_testbench
+# vsim work.DE1_SoC_testbench 
+# Start time: 17:06:19 on Jan 14,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.carSensor
+# Loading work.carCount
+# Loading work.seg7
+add wave -position end  sim:/DE1_SoC_testbench/a
+add wave -position end  sim:/DE1_SoC_testbench/a
+add wave -position end  sim:/DE1_SoC_testbench/b
+add wave -position end  sim:/DE1_SoC_testbench/reset
+add wave -position end  sim:/DE1_SoC_testbench/CLOCK_50
+add wave -position end  sim:/DE1_SoC_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_testbench/HEX1
+add wave -position end  sim:/DE1_SoC_testbench/HEX2
+add wave -position end  sim:/DE1_SoC_testbench/HEX3
+add wave -position end  sim:/DE1_SoC_testbench/HEX4
+add wave -position end  sim:/DE1_SoC_testbench/HEX5
+add wave -position end  sim:/DE1_SoC_testbench/CLOCK_PERIOD
+run -all
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/DE1_SoC.sv(132)
+#    Time: 12250 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/DE1_SoC.sv line 132
+vsim work.seg7_testbench
+# End time: 17:12:16 on Jan 14,2023, Elapsed time: 0:05:57
+# Errors: 0, Warnings: 0
+# vsim work.seg7_testbench 
+# Start time: 17:12:16 on Jan 14,2023
+# Loading sv_std.std
+# Loading work.seg7_testbench
+# Loading work.seg7
+add wave -position end  sim:/seg7_testbench/in
+add wave -position end  sim:/seg7_testbench/hexout0
+add wave -position end  sim:/seg7_testbench/hexout1
+add wave -position end  sim:/seg7_testbench/hexout2
+add wave -position end  sim:/seg7_testbench/hexout3
+add wave -position end  sim:/seg7_testbench/hexout4
+add wave -position end  sim:/seg7_testbench/hexout5
+add wave -position 1  sim:/seg7_testbench/clear
+add wave -position end  sim:/seg7_testbench/full
+run -all
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/seg7.sv(140)
+#    Time: 30 ps  Iteration: 0  Instance: /seg7_testbench
+# Break in Module seg7_testbench at C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/seg7.sv line 140
+vsim work.carCount_testbench
+# End time: 17:14:20 on Jan 14,2023, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 0
+# vsim work.carCount_testbench 
+# Start time: 17:14:20 on Jan 14,2023
+# Loading sv_std.std
+# Loading work.carCount_testbench
+# Loading work.carCount
+add wave -position end  sim:/carCount_testbench/CLOCK_50
+add wave -position end  sim:/carCount_testbench/CLOCK_PERIOD
+add wave -position end  sim:/carCount_testbench/clear
+add wave -position end  sim:/carCount_testbench/inc
+add wave -position end  sim:/carCount_testbench/dec
+add wave -position end  sim:/carCount_testbench/full
+add wave -position end  sim:/carCount_testbench/out
+add wave -position end  sim:/carCount_testbench/reset
+run -all
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carCount.sv(63)
+#    Time: 1650 ps  Iteration: 1  Instance: /carCount_testbench
+# Break in Module carCount_testbench at C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 1/carCount.sv line 63
+# End time: 17:17:50 on Jan 14,2023, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 0

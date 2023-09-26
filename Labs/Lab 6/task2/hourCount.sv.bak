@@ -1,0 +1,49 @@
+/*	Name: Eugene Ngo
+	Date: 3/7/2023
+	Class: EE 371
+	Lab 6: Parking Lot 3D Simulation
+*/
+
+// hourCount takes 2 inputs (reset, incr) and outputs
+// the hours counted thus far to progress the day in the parking lot system
+module hourCount (inc, clk, reset, out);
+
+	input logic inc, clk, reset;
+	output logic [3:0]  out;
+
+	// Sequential logic for counting up and counting down depending on the input.
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			out <= 4'b0000;
+		end
+		else if (inc & out < 4'b1000) begin //increment when not at max
+			out <= out + 4'b0001;
+		end
+		else
+			out <= out; // hold value otherwise
+	end // always_ff
+
+endmodule 
+
+// hourCount_testbench tests all expected, unexpected, and edgecase behaviors
+module hourCount_testbench();
+	logic inc, clk, reset;
+	logic [3:0] out;
+	logic CLOCK_50;
+	
+	hourCount dut (.inc, .clk(CLOCK_50), .reset, .out);
+	
+	// Setting up the clock.
+	parameter CLOCK_PERIOD = 100;
+	initial begin
+		CLOCK_50 <= 0;
+		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50; // toggle the clock forever
+	end // initial
+	
+	initial begin
+		reset <= 1;                     repeat(3) @(posedge CLOCK_50); // reset
+		reset <= 0; 					repeat (7) @(posedge CLOCK_50); // inc past max limit
+		inc <= 0; 						repeat(7) @(posedge CLOCK_50); // dec past min limit
+		$stop;
+	end
+endmodule // counter_testbench

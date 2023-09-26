@@ -1,0 +1,100 @@
+/*	Name: Eugene Ngo
+	Date: 3/7/2023
+	Class: EE 371
+	Lab 6: Parking Lot 3D Simulation
+*/
+// DE1_SoC combines all the modules together, pipelining the control and
+// various incrememnt modules to Switches and VGPIO to then
+// send them to the datapath module to output to the HEX and RAM modules.
+module DE1_SoC (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, SW, LEDR, V_GPIO);
+	// define ports
+	input  logic CLOCK_50;
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	input  logic [3:0] KEY;
+	input  logic [9:0] SW;
+	output logic [9:0] LEDR;
+	inout  logic [35:23] V_GPIO;
+
+	logic clk;
+	assign clk = CLOCK_50;
+	
+	logic [1:0] counter_out;
+	logic [3:0] hour_out, incr_out, addr_out;
+	logic [31:0] divided_clocks;
+
+	// FPGA input
+	assign V_GPIO[26] = V_GPIO[28];	// LED parking 1
+	assign V_GPIO[27] = V_GPIO[29];	// LED parking 2
+	assign V_GPIO[32] = V_GPIO[30];	// LED parking 3
+	
+	// Parking spot 1 occupied and Parking spot 2 occupied and Parking spot 3 occupied
+	// = parking lot = full.
+	assign V_GPIO[34] = V_GPIO[28] & V_GPIO[29] & V_GPIO[30];	// LED full
+	// Parking lot isnt full and presence at entrance = open entrance gate
+	assign V_GPIO[31] = ~V_GPIO[34] & V_GPIO[23];	// Open entrance
+	// If anyone at exit sensor, open exit gate.
+	assign V_GPIO[33] = V_GPIO[24];	// Open exit
+
+	// FPGA output, for debugging
+	assign LEDR[0] = V_GPIO[28];	// Presence parking 1
+	assign LEDR[1] = V_GPIO[29];	// Presence parking 2
+	assign LEDR[2] = V_GPIO[30];	// Presence parking 3
+	assign LEDR[3] = V_GPIO[23];	// Presence entrance
+	assign LEDR[4] = V_GPIO[24];	// Presence exit
+	assign LEDR[9] = endGameHexOut;	// Presence exit
+	assign LEDR[8] = startRush;
+	assign LEDR[7] = stopRush;
+
+
+	// Helper logic, passed along to different modules.
+	logic zeroOccupied;
+//	logic [6:0] rushHourBegin, rushHourEnd;
+	assign zeroOccupied = !(V_GPIO[28] | V_GPIO[29] | V_GPIO[30]);
+	
+	logic startRush;
+	logic rushEnded;
+	logic stopRush;
+	logic endGameHexOut;
+	
+	// clockDivide generates slower clocks to process different inputs
+	clock_divider clockDivide (.clock(clk), .reset(SW[9]), .divided_clocks(divided_clocks));
+	
+	// hourCount counter takes in the KEY[0] signal and increases the 
+	// current hour, progressing the day in the parking lot
+	hourCount timeCounter (.inc(~KEY[0]), .clk(divided_clocks[25]), .reset(SW[9]), .out(hour_out));
+	
+	// carCount counter takes in the parking spot signals from VGPIO 28-30 and outputs
+	// the number of spots left
+	carCount #(3) counter (.park1(V_GPIO[28]), .park2(V_GPIO[29]), .park3(V_GPIO[30]), .full(V_GPIO[34]), .clk(clk), .reset(SW[9]), .out(counter_out));
+	
+	// The carIncrCounter, used for saving the values to RAM
+	carIncrCounter incrCounter (.inc(V_GPIO[31]), .buttonReset(~KEY[0]), .clk(divided_clocks[25]), .reset(SW[9]), .out(incr_out));
+	
+	// The addressIterator, used for reading the values from RAM
+	addrIter addrIterator (.inc(endGameHexOut), .clk(divided_clocks[25]), .reset(SW[9]), .out(addr_out));
+	
+	// Pipelining the values from hourCount and carCount, we can generate control signals that are used to control the seven segment display.
+	controlUnit controls (.occupied(V_GPIO[34]), .noneOccupied(zeroOccupied), .hour(hour_out), .reset(SW[9]), .clk(clk), .startRush(startRush), .stopRush(stopRush), .endGameHexOut(endGameHexOut), .rushEnded(rushEnded));
+	
+	// Pipelining the values from control signals to the datapath to generate the rush hour values and then push them to the seg7 display
+	dataPathUnit path (.startRush(startRush), .stopRush(stopRush), .endGameHexOut(endGameHexOut), .clk(clk), .in(counter_out), .time_in(hour_out), .incr_in(incr_out), .addr_in(addr_out),
+					   .reset(SW[9]), .rushEnded(rushEnded), .slowClk(divided_clocks[25]), .hexout0(HEX0), .hexout1(HEX1), .hexout2(HEX2), .hexout3(HEX3), .hexout4(HEX4), .hexout5(HEX5));
+
+endmodule  // DE1_SoC
+
+
+module DE1_SoC_testbench();
+	logic CLOCK_50;
+	logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	logic [3:0] KEY;
+	logic [9:0] SW;
+	logic [9:0] LEDR;
+	logic [35:23] V_GPIO;
+	
+	DE1_SoC dut (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, SW, LEDR, V_GPIO) dut (.startRush, .stopRush, .endGameHexOut, .clk, .in, .time_in, .hexout0, .hexout1, .hexout2, .hexout3, .hexout4, .hexout5);
+	
+	initial begin
+		
+		$stop;
+	end // initial
+endmodule

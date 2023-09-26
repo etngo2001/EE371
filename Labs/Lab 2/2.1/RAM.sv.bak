@@ -1,0 +1,63 @@
+// Cynthia Li
+// 4/20/21
+// EE 371 LAB2 TASK1
+
+// Module ram32x4 defines a single port ram that uses the input 5-bit 
+// address to update the stored value in this address in the ram when input
+// write is true, and always reads the value stored in this address.
+module RAM (clk, write, addr, data_in, data_out);
+	input logic clk, write;
+	input logic [4:0] addr;
+	input logic [3:0] data_in;
+	
+	output logic [3:0] data_out;
+	
+	// the following defines the size of the built-in memory block
+	logic [3:0] RAM [31:0];
+	
+	// the following is the write operation
+	always_ff @(posedge clk) begin
+		if (write) begin
+			RAM[addr] <= data_in;
+		end
+	end
+	
+	// the following is the read operation
+	assign data_out = RAM[addr];
+endmodule
+
+module RAM_testbench();
+	logic clk, write;
+	logic [4:0] addr;
+	logic [3:0] data_in;
+	
+	logic [3:0] data_out;
+	
+	// Set up a simulated clock.
+	parameter CLOCK_PERIOD=100;
+
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk; // Forever toggle the clock
+	end
+	
+	ram32x4 dut (.clk, .write, .addr, .data_in, .data_out);
+	
+	initial begin
+		write <= 1'b1; addr <= 5'b10001;		@(posedge clk); // test enabled write + no input
+																			 // expect X;
+		data_in <= 4'b0001;						@(posedge clk); // test enabled write + input
+																			 // expect X;
+		data_in <= 4'b0110;						@(posedge clk); // test if data continues to be updated
+																			 // expect 4'b0001
+		write <= 1'b0; 							@(posedge clk); // test disenable write + no input
+																			 // expect 4'b0110
+		data_in <= 4'b1111;						@(posedge clk); // test disenable write + input
+																			 // expect  4'b0110
+		write <= 1'b1; addr <= 5'b00001;							 // test if other address's value can be changed
+		data_in <= 4'b0001;						@(posedge clk); // expect 
+		write <= 1'b0; addr <= 5'b10001;		@(posedge clk); // expect 4'b0001
+														@(posedge clk); // expect 4'b0110
+		$stop;
+	end
+endmodule

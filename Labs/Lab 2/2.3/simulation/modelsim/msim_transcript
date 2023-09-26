@@ -1,0 +1,205 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do FIFO_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 2/2.3 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:02:50 on Jan 25,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v 
+# -- Compiling module ram16x8
+# 
+# Top level modules:
+# 	ram16x8
+# End time: 23:02:50 on Jan 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 2/2.3 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO_Control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:02:50 on Jan 25,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
+# 
+# Top level modules:
+# 	FIFO_Control_testbench
+# End time: 23:02:50 on Jan 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 2/2.3 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/seg7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:02:50 on Jan 25,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/seg7.sv 
+# -- Compiling module seg7
+# -- Compiling module seg7_testbench
+# 
+# Top level modules:
+# 	seg7_testbench
+# End time: 23:02:50 on Jan 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 2/2.3 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/input_process.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:02:50 on Jan 25,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/input_process.sv 
+# -- Compiling module input_process
+# -- Compiling module input_process_testbench
+# 
+# Top level modules:
+# 	input_process_testbench
+# End time: 23:02:50 on Jan 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 2/2.3 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:02:50 on Jan 25,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO.sv 
+# -- Compiling module FIFO
+# -- Compiling module FIFO_testbench
+# 
+# Top level modules:
+# 	FIFO_testbench
+# End time: 23:02:50 on Jan 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 371/Labs/Lab\ 2/2.3 {C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:02:50 on Jan 25,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3" C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/DE1_SoC_task3.sv 
+# -- Compiling module DE1_SoC_task3
+# -- Compiling module DE1_SoC_task3_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_task3_testbench
+# End time: 23:02:50 on Jan 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.FIFO_Control
+# vsim work.FIFO_Control 
+# Start time: 23:02:54 on Jan 25,2023
+# Loading sv_std.std
+# Loading work.FIFO_Control
+vsim work.FIFO_Control_testbench
+# End time: 23:03:00 on Jan 25,2023, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# vsim work.FIFO_Control_testbench 
+# Start time: 23:03:00 on Jan 25,2023
+# Loading sv_std.std
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
+add wave -position end  sim:/FIFO_Control_testbench/depth
+add wave -position end  sim:/FIFO_Control_testbench/CLK_Period
+add wave -position end  sim:/FIFO_Control_testbench/clk
+add wave -position end  sim:/FIFO_Control_testbench/reset
+add wave -position end  sim:/FIFO_Control_testbench/read
+add wave -position end  sim:/FIFO_Control_testbench/write
+add wave -position end  sim:/FIFO_Control_testbench/wr_en
+add wave -position end  sim:/FIFO_Control_testbench/readAddr
+add wave -position end  sim:/FIFO_Control_testbench/writeAddr
+add wave -position end  sim:/FIFO_Control_testbench/empty
+add wave -position end  sim:/FIFO_Control_testbench/full
+run -all
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO_Control.sv(111)
+#    Time: 5850 ps  Iteration: 1  Instance: /FIFO_Control_testbench
+# Break in Module FIFO_Control_testbench at C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO_Control.sv line 111
+vsim work.FIFO_testbench
+# End time: 23:04:45 on Jan 25,2023, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 0
+# vsim work.FIFO_testbench 
+# Start time: 23:04:45 on Jan 25,2023
+# Loading sv_std.std
+# Loading work.FIFO_testbench
+# Loading work.FIFO
+# Loading work.ram16x8
+# ** Error: (vsim-3033) C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v(66): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FIFO_testbench/dut/RAM File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v
+#         Searched libraries:
+#             C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/simulation/modelsim/rtl_work
+# Loading work.FIFO_Control
+# Error loading design
+# End time: 23:04:46 on Jan 25,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim work.FIFO_testbench
+# vsim work.FIFO_testbench 
+# Start time: 23:04:52 on Jan 25,2023
+# Loading sv_std.std
+# Loading work.FIFO_testbench
+# Loading work.FIFO
+# Loading work.ram16x8
+# ** Error: (vsim-3033) C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v(66): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FIFO_testbench/dut/RAM File: C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/ram16x8.v
+#         Searched libraries:
+#             C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/simulation/modelsim/rtl_work
+# Loading work.FIFO_Control
+# Error loading design
+# End time: 23:04:52 on Jan 25,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.FIFO_testbench -Lf altera_mf_ver
+# vsim work.FIFO_testbench -Lf altera_mf_ver 
+# Start time: 23:05:11 on Jan 25,2023
+# Loading sv_std.std
+# Loading work.FIFO_testbench
+# Loading work.FIFO
+# Loading work.ram16x8
+# Loading altera_mf_ver.altsyncram
+# Loading work.FIFO_Control
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+add wave -position end  sim:/FIFO_testbench/CLK_Period
+add wave -position end  sim:/FIFO_testbench/clk
+add wave -position end  sim:/FIFO_testbench/depth
+add wave -position end  sim:/FIFO_testbench/empty
+add wave -position end  sim:/FIFO_testbench/full
+add wave -position end  sim:/FIFO_testbench/inputBus
+add wave -position end  sim:/FIFO_testbench/outputBus
+add wave -position end  sim:/FIFO_testbench/read
+add wave -position end  sim:/FIFO_testbench/reset
+add wave -position end  sim:/FIFO_testbench/width
+add wave -position end  sim:/FIFO_testbench/write
+run -all
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "ram16x8.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /FIFO_testbench/dut/RAM/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read ram16x8.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "ram16x8.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(48963)
+#    Time: 0 ps  Iteration: 0  Instance: /FIFO_testbench/dut/RAM/altsyncram_component/m_default/altsyncram_inst
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO.sv(113)
+#    Time: 6150 ps  Iteration: 1  Instance: /FIFO_testbench
+# Break in Module FIFO_testbench at C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/FIFO.sv line 113
+vsim work.input_process_testbench
+# End time: 23:06:28 on Jan 25,2023, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 2
+# vsim work.input_process_testbench 
+# Start time: 23:06:28 on Jan 25,2023
+# Loading sv_std.std
+# Loading work.input_process_testbench
+# Loading work.input_process
+add wave -position end  sim:/input_process_testbench/A
+add wave -position end  sim:/input_process_testbench/CLOCK_50
+add wave -position end  sim:/input_process_testbench/CLOCK_PERIOD
+add wave -position end  sim:/input_process_testbench/clk
+add wave -position end  sim:/input_process_testbench/out
+run -all
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/input_process.sv(71)
+#    Time: 2450 ps  Iteration: 1  Instance: /input_process_testbench
+# Break in Module input_process_testbench at C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/input_process.sv line 71
+vsim work.seg7_testbench
+# End time: 23:07:39 on Jan 25,2023, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0
+# vsim work.seg7_testbench 
+# Start time: 23:07:39 on Jan 25,2023
+# Loading sv_std.std
+# Loading work.seg7_testbench
+# Loading work.seg7
+add wave -position end  sim:/seg7_testbench/in
+add wave -position end  sim:/seg7_testbench/out
+run -all
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/seg7.sv(51)
+#    Time: 50 ps  Iteration: 0  Instance: /seg7_testbench
+# Break in Module seg7_testbench at C:/Users/egeen/Desktop/School/EE 371/Labs/Lab 2/2.3/seg7.sv line 51
+# End time: 23:08:29 on Jan 25,2023, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 0
